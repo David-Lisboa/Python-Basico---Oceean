@@ -16,3 +16,17 @@ print("Taxa= %.2f" % taxa, '''%''')
 print("Total= %.2f R$" % total)
 print("total= " + str(total) + "R$")
 print("Total=", total_com_virgula)
+
+# Formatação
+
+valor_refeicao = 42.54
+taxa_servico = 10
+
+total_conta = valor_refeicao + valor_refeicao * 10 / 100
+
+print(f"Sua refeição custou R$ {valor_refeicao}, mais a taxa de serviço de {taxa_servico}%.")
+print(f"O valor total ficou de R$ {total_conta:.2f}.")
+
+# Curiosidade, substituindo ponto de decimal por vírgula
+total_com_virgula = f"R$ {total_conta:.2f}".replace(".", ",")
+print(total_com_virgula)
